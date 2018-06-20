@@ -209,9 +209,13 @@ body.page-template-page-fullsingle-instatechie {
     background-position: center center;
     background-size: cover;
     background-color: black; }
-    @media (max-width: 800px) {
+    @media (max-width: 800px) and (orientation: portrait) {
       .fs-instatechie .instatechie-image {
         height: 40vh;
+        width: 100%; } }
+    @media (max-width: 800px) and (orientation: landscape) {
+      .fs-instatechie .instatechie-image {
+        height: 60vh;
         width: 100%; } }
   .fs-instatechie .logo {
     width: 200px;
@@ -225,10 +229,14 @@ body.page-template-page-fullsingle-instatechie {
     top: 0;
     margin-top: calc(40vh - 100px);
     display: none; }
-    @media (max-width: 800px) {
+    @media (max-width: 800px) and (orientation: portrait) {
       .fs-instatechie .mobile-logo {
         display: block;
         margin-top: calc(20vh - 100px); } }
+    @media (max-width: 800px) and (orientation: landscape) {
+      .fs-instatechie .mobile-logo {
+        display: block;
+        margin-top: calc(30vh - 100px); } }
   .fs-instatechie .instatechie-content {
     width: 50%;
     min-height: 50vh;
@@ -257,9 +265,12 @@ body.page-template-page-fullsingle-instatechie {
       @media (max-width: 1200px) {
         .fs-instatechie .instatechie-content .instatechie-content-vertically-center {
           padding: 60px; } }
-      @media (max-width: 800px) {
+      @media (max-width: 800px) and (orientation: portrait) {
         .fs-instatechie .instatechie-content .instatechie-content-vertically-center {
           padding: 40px; } }
+      @media (max-width: 800px) and (orientation: landscape) {
+        .fs-instatechie .instatechie-content .instatechie-content-vertically-center {
+          padding: 10px 40px 40px; } }
 
 .instatechie-intro {
   font-weight: 600;
@@ -285,7 +296,7 @@ body.page-template-page-fullsingle-instatechie {
       padding: 30px 0; } }
   @media (max-width: 800px) {
     .instatechie-bio {
-      padding: 20px 0; } }
+      padding: 20px 0 40px; } }
   .instatechie-bio p {
     color: #d2dbe4; }
   .instatechie-bio a {
@@ -302,7 +313,7 @@ body.page-template-page-fullsingle-instatechie {
       border-bottom: 1px dotted #CA486d; }
 
 .instatechie-lists .instatechie-list {
-  width: 30%;
+  width: 32%;
   display: inline-block;
   margin-bottom: 40px;
   vertical-align: top; }
